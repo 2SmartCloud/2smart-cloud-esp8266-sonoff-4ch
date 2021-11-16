@@ -20,7 +20,6 @@ bool LoadConfig() {
 
     if (!ReadSettings("/config.txt", reinterpret_cast<byte *>(&user_data), sizeof(user_data))) {
         EraseFlash();
-        // WriteSandboxData();
     }
 
     snprintf(ssid_name, sizeof(ssid_name), "%s", user_data.ssid_name);

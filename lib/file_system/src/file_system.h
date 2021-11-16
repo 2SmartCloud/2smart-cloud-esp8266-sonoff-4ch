@@ -32,4 +32,3 @@ bool SaveConfig();
 bool EraseFlash();
 bool WriteSettings(const char *file_path, uint8_t *data, size_t size_of_data);
 bool ReadSettings(const char *file_path, uint8_t *data, size_t size_of_data);
-bool WriteSandboxData();
